@@ -1,4 +1,4 @@
-from classes.Reader import Reader
+from classes.ITDashboardGovReader import ITDashboardGovReader as Reader
 from classes.Parser import Parser
 from classes.Writer import Writer
 
