@@ -1,20 +1,6 @@
-class Reader:
-
-    def read(self):
-        raise Exception("Abstract method")
-
-
-class Writer:
-
-    def write(self, data):
-        raise Exception("Abstract method")
-
-
-class Parser:
-
-    def parse(self, data):
-        raise Exception("Abstract method")
-
+from classes.Reader import Reader
+from classes.Parser import Parser
+from classes.Writer import Writer
 
 reader = Reader()
 writer = Writer()
@@ -24,5 +10,3 @@ print(reader_data)
 parsed_data = parser.parse(reader_data)
 print(parsed_data)
 writer.write(parsed_data)
-
-# modules reader, writer, parser
